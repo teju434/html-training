@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static & Relative</title>
+    <style>
+        /* 🔹 Static (default) */
+        .static-box {
+            position: static;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        header, main, footer {
+            position: static;
+            padding: 20px;
+            margin: 10px;
+            background: lightgray;
+        }
+
+        /* 🔹 Relative */
+        .relative-box {
+            position: relative;
+            left: 50px;
+            top: 30px;
+            background: lightblue;
+            padding: 20px;
+        }
+
+        .box2 {
+            position: relative;
+            left: 100px;
+            top: 50px;
+            background: lightgreen;
+            padding: 20px;
+        }
+
+        /* Profile Card */
+        .card {
+            border: 1px solid black;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            position: relative;
+            top: -20px;
+            width: 100px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+
+        .logo {
+            position: relative;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🔹 Task 1 -->
+<div class="static-box">Box 1</div>
+<div class="static-box">Box 2</div>
+<div class="static-box">Box 3</div>
+
+<!-- 🔹 Task 2 -->
+<header>Header</header>
+<main>Main Content</main>
+<footer>Footer</footer>
+
+<hr>
+
+<!-- 🔹 Task 3 -->
+<div class="relative-box">Relative Box</div>
+
+<!-- 🔹 Task 4 -->
+<div class="static-box">Box 1</div>
+<div class="box2">Moved Box</div>
+
+<!-- 🔹 Task 5 -->
+<div class="card">
+    <img src="https://via.placeholder.com/100">
+    <h3>Raju</h3>
+</div>
+
+<!-- 🔹 Task 6 -->
+<div class="navbar">
+    <span class="logo">My Logo</span>
+</div>
+
+</body>
+</html>
